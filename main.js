@@ -66,6 +66,6 @@ app.get("/buscar/:key", async function(req,res){
 
 
 
-app.listen(PORT,function(){
-    console.log("Frontend está rodando na porta:"+PORT);
+app.listen(port,function(){
+    console.log("Frontend está rodando na porta:"+port);
 })
