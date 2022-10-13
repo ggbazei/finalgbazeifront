@@ -1,0 +1,26 @@
+<head>
+    <script>
+        function contar(val){
+            location.href="/teste2/"+document.getElementById("idvalor").value;
+        }
+    </script>
+</head>
+<form action="/gravar" method="POST">
+    <label>Codigo</label>
+    <input type="text" name="codigo" value=""/>
+    <label>Nome</label>
+    <input type="text" name="nome" value=""/>
+    <label>Endereço</label>
+    <input type="text" name="endereco" value=""/>
+    <input type="submit" value="Salvar"/>
+</form>
+
+<form action="/buscarTodos" method="GET">
+    <label>Codigo</label>
+    <input type="text" name="codigo" disabled value="{{codigo}}"/>
+    <label>Nome</label>
+    <input type="text" name="nome" disabled value="{{nome}}"/>
+    <label>Endereço</label>
+    <input type="text" name="nome" disabled value="{{endereco}}"/>
+    <input type="submit" value="Buscar"/>
+</form>
