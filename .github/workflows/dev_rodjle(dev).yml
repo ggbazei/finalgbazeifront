@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'rodjle'
           slot-name: 'dev'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B2477099E99F4196883992C7E6C2797E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4B8A567DBF3F4062B0FEC812CC7BB315 }}
           package: .
