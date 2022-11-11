@@ -10,7 +10,7 @@ async function getInfo(){
 }
 
 
-async function salvaCadastro(dados){
+async function salvaCadastrocliente(dados){
     try {
       console.log(dados)
       return await api.post("/clientes/salvar",{...dados});   
@@ -19,12 +19,29 @@ async function salvaCadastro(dados){
     }     
  }
 
- async function getDados(){
+ async function getDadoscliente(){
   try {
     return await api.get("/clientes/listar");   
   } catch (error) {
     console.log("Error: "+error)
   }     
+}
+
+async function salvaCadastroproduto(dados){
+  try {
+    console.log(dados)
+    return await api.post("/produto/salvar",{...dados});   
+  } catch (error) {
+    console.log("Error: "+error)
+  }     
+}
+
+async function getDadosproduto(){
+try {
+  return await api.get("/produto/listar");   
+} catch (error) {
+  console.log("Error: "+error)
+}     
 }
 
 async function getDadosPorChave(key){
