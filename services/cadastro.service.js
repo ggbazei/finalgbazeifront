@@ -55,7 +55,9 @@ async function getDadosPorChave(key){
 
 module.exports={
     getInfo,
-    salvaCadastro,
-    getDados,
+    salvaCadastrocliente,
+    salvaCadastroproduto,
+    getDadoscliente,
+    getDadosproduto,
     getDadosPorChave
 }
