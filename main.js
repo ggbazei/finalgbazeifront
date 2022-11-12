@@ -50,8 +50,9 @@ app.post("/gravarpessoa", async function(req,res){
 
 app.get("/buscarTodospessoa", async function(req,res){
     const {data}= await service.getDadoscliente();
-    console.log(data);
-    res.render('form',data)
+    let resposta = data[0];
+    console.log(resposta);
+    res.render('form',resposta)
     
 });
 
@@ -69,8 +70,9 @@ app.post("/gravarproduto", async function(req,res){
 
 app.get("/buscarTodosproduto", async function(req,res){
     const {data}= await service.getDadosproduto();
+    let resposta  = data[0]
     console.log(data);
-    res.render('form',data)
+    res.render('form',resposta)
     
 });
 
